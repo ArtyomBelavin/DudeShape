@@ -1,0 +1,50 @@
+.text {
+  @apply flex flex-col items-center mb-[80px];
+
+  h2 {
+    @apply text-[32px] text-accent font-bold leading-[48px] mb-5;
+  }
+}
+
+.tabs {
+  @apply flex items-center gap-[101px];
+  li {
+    cursor: pointer;
+  }
+}
+
+.tab {
+  @apply text-2xl leading-[27px] text-[#919090];
+}
+
+.activeTab {
+  @apply text-[#154444] text-2xl font-medium leading-[27px] relative flex;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 57px;
+    height: 2px;
+    background-color: #154444;
+  }
+}
+
+.furnitureInfo {
+  @apply flex justify-between items-center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  button {
+    @apply flex flex-col gap-[14px] justify-center text-center items-center border border-[#D9DCE5] py-4 px-[65px] max-w-[222px] max-h-[90px];
+    p {
+      white-space: nowrap;
+    }
+  }
+}
