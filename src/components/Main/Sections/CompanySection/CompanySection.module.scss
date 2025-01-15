@@ -1,0 +1,10 @@
+.company {
+  @apply text-center mb-[120px];
+
+  h3 {
+    @apply text-title text-[32px] font-bold mb-10;
+  }
+  div {
+    @apply flex justify-center gap-[100px] items-center flex-wrap;
+  }
+}

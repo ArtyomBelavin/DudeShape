@@ -1,0 +1,41 @@
+.about {
+  @apply flex gap-[100px] mb-[140px];
+}
+
+.images {
+  position: relative;
+}
+
+.bgImg {
+  position: absolute;
+  background-color: #dee4e2;
+  width: 596px;
+  height: 577px;
+  top: 30px;
+  left: 30px;
+  z-index: -1;
+}
+
+.text {
+  @apply flex flex-col max-w-[437px];
+
+  h3 {
+    @apply text-title text-[32px] leading-[40px] font-bold mb-5;
+  }
+
+  p {
+    @apply text-[#444] text-[20px] leading-[25px] mb-10;
+  }
+}
+
+.aboutAdvantages {
+  @apply flex flex-col gap-[30px] items-start;
+
+  h4 {
+    @apply text-title text-[20px] leading-[26px] mb-[14px] font-bold;
+  }
+
+  p {
+    @apply text-[#383738] text-[18px] leading-[26px];
+  }
+}
