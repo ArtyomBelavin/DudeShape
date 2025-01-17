@@ -1,0 +1,54 @@
+.pupularCard {
+  @apply flex flex-col bg-white shadow-lg;
+}
+
+.cardContent {
+  @apply px-6 pb-7 flex flex-col gap-5 mt-[30px];
+}
+
+.cardInfo {
+  @apply flex justify-between items-center;
+
+  p {
+    @apply text-[20px] font-medium text-accent leading-[27px];
+  }
+
+  div {
+    @apply flex gap-2 items-center;
+  }
+}
+
+.likeBtn,
+.share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  border-radius: 50%;
+  background-color: #ecf4ff;
+}
+
+.likeBtnActive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  border-radius: 50%;
+  background-color: #ef5423;
+}
+
+.likeActive {
+  stroke: #fff;
+}
+
+.cardPrice {
+  @apply flex justify-between items-center;
+
+  p {
+    @apply text-2xl leading-8 font-medium text-[#154444];
+  }
+
+  button {
+    @apply px-4 py-[6px] bg-title text-white text-[12px] left-5 font-medium;
+  }
+}
